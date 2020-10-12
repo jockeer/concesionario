@@ -4,8 +4,6 @@ const SideBar = () => {
     return ( 
         <aside>
             <h2>ADMINISTRACION<span> Beautiful Car</span></h2>
-            
-
             <h1>MENU</h1>
             <ul>
                 <li>VENTAS</li>

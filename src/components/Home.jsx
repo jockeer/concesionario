@@ -7,7 +7,7 @@ const Home = () => {
         <div className="container-app">
             <SideBar />
             <div className="container-principal">
-                <Header titulo='' />
+                <Header titulo='Bienvenido' />
             </div>
         </div>
      );
