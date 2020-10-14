@@ -10,6 +10,7 @@
 }
 .container-app{
   min-height: 100vh;
+  display: flex;
   
 }
 aside{
@@ -54,9 +55,26 @@ aside ul{
   padding: 20px;
   color: white;
 }
+aside ul a{
+  color: white;
+}
+aside ul a:hover{
+  text-decoration: none;
+  color: white;
+  
+}
 
 aside ul li{
   padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  
+}
+aside ul li:hover{
+  opacity: .5;
+}
+aside ul li i{
+  vertical-align: top;
+  margin-right:10px ;
 }
 
 /*------------LOGIN-------------*/
@@ -84,3 +102,22 @@ aside ul li{
 .sombra{
   box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, .5);
 }
+
+/*CONTENIDO PRINICPAL*/
+.container-principal{
+  background-color: rgb(235, 235, 235);
+  min-height: 100vh;
+  width: 100%;
+}
+.container-principal .container h2{
+  font-weight: 900;
+  margin: 20px 0;
+  font-size: 2.5rem;
+}
+.container-principal .container h3{
+  font-weight: 600;
+  margin: 20px 0;
+  font-size: 2rem;
+}
+
+/*------*/
