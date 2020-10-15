@@ -7,7 +7,7 @@ const Catalogo = () => {
             <form action="">
                 <div className="form-group">
                     <select name="" id="">
-                        <option value="">a</option>
+                        <option value="">Seleccione su e</option>
                         <option value="">a</option>
                         <option value="">a</option>
                     </select>
