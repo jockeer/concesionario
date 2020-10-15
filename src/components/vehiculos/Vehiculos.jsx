@@ -3,6 +3,7 @@ import Header from '../layout/Header';
 import SideBar from '../layout/SideBar';
 
 import Catalogo from './Catalogo'
+import RegistrarVehiculos from './RegistrarVehiculos';
 
 const Vehiculos = () => {
     return ( 
@@ -27,7 +28,9 @@ const Vehiculos = () => {
                         <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <Catalogo />
                         </div>
-                        <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                        <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <RegistrarVehiculos/>
+                        </div>
                         <div className="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
                     </div>
                 </div>
