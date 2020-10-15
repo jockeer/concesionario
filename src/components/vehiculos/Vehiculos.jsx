@@ -20,9 +20,7 @@ const Vehiculos = () => {
                         <li className="nav-item" role="presentation">
                             <a className="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Registrar</a>
                         </li>
-                        <li className="nav-item" role="presentation">
-                            <a className="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Reporte</a>
-                        </li>
+                        
                     </ul>
                     <div className="tab-content" id="myTabContent">
                         <div className="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -31,7 +29,7 @@ const Vehiculos = () => {
                         <div className="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <RegistrarVehiculos/>
                         </div>
-                        <div className="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                        
                     </div>
                 </div>
             </div>

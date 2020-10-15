@@ -46,7 +46,7 @@ const RegistrarVehiculos = () => {
     const onSubmit = async e => {
         e.preventDefault();
 
-        if (modelo.trim()==='',marca.trim()==='',cilindrada.trim()==='',precio<=0) {
+        if (modelo.trim()==='' || marca.trim()==='' || cilindrada.trim()==='' || precio <= 0) {
             setError(true);
             return;
         }
@@ -102,8 +102,8 @@ const RegistrarVehiculos = () => {
                     <div className="form-row">
                         <div className="form-group col-11">
                             <label htmlFor="">Marca</label>
-                            <select name="marca" id="" value={marca} className="form-control" onChange={onChange}>
-                                <option value="0" disabled>Seleccione una marca...</option>
+                            <select name="marca" id="" className="form-control" onChange={onChange}>
+                                <option defaultValue="0">Seleccione una marca</option>
                                 <option value="1">TOYOTA</option>
                                 <option value="2">NISSAN</option>
                                 <option value="3">FORD</option>

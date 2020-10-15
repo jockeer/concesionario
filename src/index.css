@@ -113,6 +113,7 @@ aside ul li i{
   background-color: rgb(235, 235, 235);
   min-height: 100vh;
   width: 100%;
+  padding-bottom: 20px;
 }
 .container-principal .container h2{
   font-weight: 900;
@@ -166,3 +167,38 @@ aside ul li i{
   width: 100%;
 }
 /**/
+
+/*-----NUEVA VENTA----*/
+.container.nueva-venta{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 15px;
+}
+.container.nueva-venta img{
+  width: 100%;
+}
+.spinner-border{
+  width: 4rem;
+  height: 4rem;
+}
+/*----*/
+
+label{
+  font-weight: bold;
+}
+.opcion-elegir{
+  font-size: 1.5rem;
+}
+input[type='checkbox']{
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+}
+table{
+  background: white;
+}
+tr{
+  text-align: center;
+  font-size: 14px;
+  border-bottom: 1px solid black;
+}

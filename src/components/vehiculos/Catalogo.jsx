@@ -11,7 +11,7 @@ const Catalogo = () => {
 
     useEffect(() => {
         const llenarCatalogo = async () => {
-            const API= await fetch(`http://localhost:4000/api/traerVehiculos/1`);
+            const API= await fetch(`http://localhost:4000/api/traerVehiculos`);
             const respuesta= await API.json();
             setCatalogo(respuesta);
 
@@ -33,7 +33,7 @@ const Catalogo = () => {
             <form onSubmit={onSubmit}>
                 <div className="form-group">
                     <select className="form-control" name="" onChange={onChange} id="">
-                        <option value="0" disabled>Seleccione una opcion...</option>
+                        <option defaultValue="0">Seleccione una opcion...</option>
                         <option value="1">TOYOTA</option>
                         <option value="2">NISSAN</option>
                         <option value="3">FORD</option>
