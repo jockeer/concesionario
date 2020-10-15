@@ -1,6 +1,8 @@
 :root{
   --oscuro2: rgb(52, 52, 61);
   --oscuro: rgb(44, 44, 56);
+  --verde:#28a745;
+  --verdeoscuro:#24853a;
   
 }
 *{
@@ -102,6 +104,9 @@ aside ul li i{
 .sombra{
   box-shadow: 0px 5px 20px 1px rgba(0, 0, 0, .5);
 }
+.sombra-dark{
+  box-shadow: 0px 9px 9px 0px rgba(0, 0, 0, .5);
+}
 
 /*CONTENIDO PRINICPAL*/
 .container-principal{
@@ -121,3 +126,43 @@ aside ul li i{
 }
 
 /*------*/
+
+/*CATALOGO*/
+.container-catalogo{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 15px;
+}
+.container-catalogo .card .card-header{
+  background-color: var(--oscuro2);
+}
+.container-catalogo .card .card-body{
+  padding: 0;
+}
+.container-catalogo .card .card-body img{
+  width: 100%;
+}
+.container-catalogo .card .card-footer{
+  text-align: right;
+}
+.container-catalogo .card .card-footer a{
+  background-color: var(--verde);
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.container-catalogo .card .card-footer a:hover{
+  background-color: var(--verdeoscuro);
+}
+/*-----*/
+
+/*---NUEVO VEHICULO---*/
+.container-nuevo-vehiculo{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.container-imagen-vehiculo img{
+  width: 100%;
+}
+/**/
